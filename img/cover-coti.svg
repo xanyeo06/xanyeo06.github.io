@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Abstract diagram of a monitored three-host lab network">
+  <rect width="1200" height="675" fill="#101012"/>
+
+  <g stroke="#454440" stroke-width="1" fill="none">
+    <path d="M410 459 L440 340"/>
+    <path d="M790 459 L760 340"/>
+    <path d="M950 228 L950 430"/>
+  </g>
+  <path d="M250 228 L250 430" stroke="#4a4945" stroke-width="1" stroke-dasharray="4 6" fill="none"/>
+
+  <g fill="#161618" stroke="#3a3936">
+    <rect x="90" y="170" width="320" height="58" rx="2"/>
+    <rect x="90" y="430" width="320" height="58" rx="2"/>
+    <rect x="790" y="170" width="320" height="58" rx="2"/>
+    <rect x="790" y="430" width="320" height="58" rx="2"/>
+  </g>
+  <rect x="440" y="300" width="320" height="58" rx="2" fill="#171512" stroke="#c2a878"/>
+
+  <g font-family="ui-monospace, monospace" font-size="15" letter-spacing="1.5" fill="#86837c">
+    <text x="112" y="206">KALI LINUX</text>
+    <text x="112" y="466">JUICE SHOP</text>
+    <text x="812" y="206">SNORT · IDS</text>
+    <text x="812" y="466">UNIVERSAL FORWARDER</text>
+  </g>
+  <text x="462" y="336" font-family="ui-monospace, monospace" font-size="15" letter-spacing="1.5" fill="#c2a878">SPLUNK ENTERPRISE</text>
+
+  <text x="262" y="336" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1.5" fill="#5f5d58">12 ATTACKS</text>
+</svg>

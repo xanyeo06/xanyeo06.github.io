@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Abstract diagram of recovered files on a mobile device">
+  <rect width="1200" height="675" fill="#101012"/>
+  <rect x="330" y="70" width="300" height="535" rx="26" fill="#141416" stroke="#2a2a2c"/>
+  <rect x="352" y="104" width="256" height="467" rx="4" fill="#0e0e10" stroke="#1e1e20"/>
+  <rect x="430" y="84" width="100" height="8" rx="4" fill="#2a2a2c"/>
+  <g fill="#1c1c1e">
+    <rect x="374" y="128" width="100" height="72" rx="2"/>
+    <rect x="486" y="128" width="100" height="72" rx="2"/>
+    <rect x="374" y="212" width="100" height="72" rx="2"/>
+    <rect x="486" y="212" width="100" height="72" rx="2"/>
+    <rect x="374" y="296" width="100" height="72" rx="2"/>
+    <rect x="486" y="296" width="100" height="72" rx="2"/>
+    <rect x="374" y="380" width="100" height="72" rx="2"/>
+    <rect x="486" y="380" width="100" height="72" rx="2"/>
+    <rect x="374" y="464" width="100" height="72" rx="2"/>
+    <rect x="486" y="464" width="100" height="72" rx="2"/>
+  </g>
+  <g fill="#171512" stroke="#c2a878">
+    <rect x="374" y="212" width="100" height="72" rx="2"/>
+    <rect x="486" y="380" width="100" height="72" rx="2"/>
+  </g>
+  <g stroke="#c2a878" stroke-width="1.4" fill="none" opacity="0.9">
+    <path d="M690 300 L830 300"/>
+    <circle cx="880" cy="300" r="52"/>
+    <path d="M917 337 L962 382"/>
+  </g>
+  <g font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.2" fill="#5f5d58">
+    <text x="700" y="420">FF D8 FF E0</text>
+    <text x="700" y="444">image/jpeg</text>
+  </g>
+</svg>

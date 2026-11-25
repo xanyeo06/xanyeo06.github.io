@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 40 1200 900" role="img" aria-label="Diagram of bank alert emails parsed into a database and shown in a phone app">
+  <rect width="1200" height="1000" fill="#101012"/>
+
+  <g stroke="#454440" stroke-width="1" fill="none">
+    <path d="M460 146 L460 230"/>
+    <path d="M460 316 L460 400"/>
+    <path d="M460 486 L460 540 L600 540 L600 580"/>
+  </g>
+
+  <g fill="#161618" stroke="#3a3936">
+    <rect x="110" y="60" width="700" height="86" rx="2"/>
+    <rect x="110" y="400" width="700" height="86" rx="2"/>
+  </g>
+  <rect x="110" y="230" width="700" height="86" rx="2" fill="#171512" stroke="#c2a878"/>
+
+  <g font-family="ui-monospace, monospace" font-size="17" letter-spacing="1.8" fill="#86837c">
+    <text x="138" y="113">GMAIL INBOX</text>
+    <text x="138" y="453">POSTGRES</text>
+  </g>
+  <text x="138" y="283" font-family="ui-monospace, monospace" font-size="17" letter-spacing="1.8" fill="#c2a878">PARSER + RULES</text>
+
+  <g font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.2" fill="#6d6a63">
+    <text x="840" y="113">SIX BANK FORMATS</text>
+    <text x="840" y="283">AMOUNT · MERCHANT · DATE</text>
+    <text x="840" y="453">DEDUPE BY SIGNATURE</text>
+  </g>
+
+  <rect x="470" y="580" width="260" height="340" rx="22" fill="#141416" stroke="#3a3936"/>
+  <rect x="570" y="596" width="60" height="4" rx="2" fill="#2a2a2c"/>
+
+  <g fill="none" stroke-width="14">
+    <circle cx="600" cy="700" r="48" stroke="#242427"/>
+    <circle cx="600" cy="700" r="48" stroke="#c2a878" stroke-dasharray="181 121" transform="rotate(-90 600 700)"/>
+  </g>
+
+  <g fill="#242427">
+    <rect x="540" y="790" width="120" height="9" rx="4.5"/>
+    <rect x="540" y="811" width="92" height="9" rx="4.5"/>
+    <rect x="540" y="832" width="106" height="9" rx="4.5"/>
+    <rect x="540" y="853" width="74" height="9" rx="4.5"/>
+  </g>
+  <rect x="540" y="790" width="120" height="9" rx="4.5" fill="#c2a878" opacity="0.5"/>
+  <rect x="540" y="811" width="92" height="9" rx="4.5" fill="#c2a878" opacity="0.3"/>
+
+  <text x="540" y="893" font-family="ui-monospace, monospace" font-size="11" letter-spacing="1.4" fill="#4a4945">AUG 2026</text>
+</svg>

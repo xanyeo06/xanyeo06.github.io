@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xander Yeo — Cybersecurity &amp; Digital Forensics</title>
+<meta name="description" content="Cybersecurity &amp; Digital Forensics student at Ngee Ann Polytechnic, Singapore, specialising in AI. Detection engineering, log analysis and security tooling.">
+<meta property="og:title" content="Xander Yeo — Cybersecurity &amp; Digital Forensics">
+<meta property="og:description" content="Detection engineering, log analysis and security tooling. School and personal projects, awards and certifications.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0c0c0d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js', 'is-booting');</script>
+</head>
+<body id="top">
+
+<header class="nav">
+  <div class="shell nav-inner">
+    <a class="brand" href="#top">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" fill="#16130f"/><g stroke="#c2a878" stroke-width="2.4"><line x1="9" y1="9" x2="23" y2="23"/><line x1="23" y1="9" x2="9" y2="23"/></g></svg>
+      <span>Xander Yeo</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Awards</a>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <a href="https://github.com/xanyeo06" class="ext">GitHub<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+      <a href="https://www.linkedin.com/in/xanyeo" class="ext">LinkedIn<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 9L9 3M9 3H4M9 3V8" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="shell hero-inner">
+      <h1 class="hero-name"><span>Xander Yeo</span></h1>
+      <div class="hero-rule" aria-hidden="true"></div>
+      <p class="hero-cred">Diploma in Cybersecurity &amp; Digital Forensics · Specialisation in AI for Cybersecurity · Ngee Ann Polytechnic</p>
+      <p class="lede">I like taking things apart to see how they work — what a web page is actually doing, where network traffic really goes, what a device leaves behind after someone has used it. Most of that curiosity ends up pointed at security.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn ghost" href="https://github.com/xanyeo06">All repositories</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="section-note">01</p>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-lead">
+          <p>I picked the course without much conviction. What kept me was noticing how much of it is just figuring out how things are put together.</p>
+          <p>The thread started with web pages — wanting to know what one is actually doing, not the layout but the machinery under it: what gets requested, what comes back, and what the browser quietly does with the answer. Once you can see that, the question stops being how to use a site and becomes what else it will let you do.</p>
+        </div>
+        <div class="about-side">
+          <p>Most of my work now sits on the defensive side: detections, triage, and small tools that do the boring reading for me. When I'm not doing that I'm usually reading — the latest AI / Tech news, security write-ups, whatever explains how something I rely on actually works.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="section-note">02</p>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="group-head">
+        <h3>School</h3>
+      </div>
+
+      <div class="grid">
+
+        <a class="card" href="https://github.com/xanyeo06/EATC-SOC-Triage-Tool">
+          <div class="card-cover">
+            <img src="img/cover-soc.svg" alt="Bar chart of classified network flows" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>SOC Triage Tool</h3></div>
+            <p>The brief was a question rather than a build: how much of an analyst's triage can a model take over? This one sorts CIC-IDS2017 flows into benign or one of ten attack types and serves them through a Streamlit app — 170,366 flows in a single pass, 2,425 flagged.</p>
+            <div class="card-foot">
+              <span class="tags">Python · scikit-learn · Streamlit · CICFlowMeter</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/xanyeo06/AITT-AI-SOC-Log-Severity-Classifier">
+          <div class="card-cover">
+            <img src="img/cover-aitt.svg" alt="Log lines mapped to severity levels" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>Log Severity Classifier</h3></div>
+            <p>Analysts don't drown in alerts so much as in the raw logs behind them. The task was a model that reads unparsed log text alone and sorts it into four severity levels quickly enough to matter — 85% accuracy in under 30 seconds was the target. It landed at 82%, tipping toward the higher severity on purpose: a missed critical costs more than a false alarm.</p>
+            <div class="card-foot">
+              <span class="tags">Python · TF-IDF · scikit-learn · pandas</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/xanyeo06/COTI-SIEM_Detection_Assignment">
+          <div class="card-cover">
+            <img src="img/cover-coti.svg" alt="Diagram of a monitored three-host lab network" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>SIEM Detection Lab</h3></div>
+            <p>A fictional retailer had been seeing odd-hour logins and outbound traffic it couldn't explain. The task was to rebuild its store in an isolated lab, attack it the way a real one would be attacked, then stand up a SIEM that could detect and explain each attempt. Ten attack types, one detection each.</p>
+            <div class="card-foot">
+              <span class="tags">Splunk · Snort · Juice Shop · Kali Linux</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/xanyeo06/MDLC-Credit-Card-Fraud-Detection">
+          <div class="card-cover">
+            <img src="img/cover-mdlc.svg" alt="Precision-recall curve for an anomaly detection model" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>Credit Card Fraud Detection</h3></div>
+            <p>Whether fraud detection can work without fraud labels at all: train on legitimate transactions only, then flag whatever doesn't fit. Six approaches on the same 284,807-row set, of which 492 were fraud. The best caught 70 of 95 in the held-out test.</p>
+            <div class="card-foot">
+              <span class="tags">Python · Keras · scikit-learn · Isolation Forest</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/xanyeo06/CAT-AWS-Enterprise-Cloud-Migration">
+          <div class="card-cover">
+            <img src="img/cover-cat.svg" alt="Two availability zones with load balancers and databases" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>AWS Enterprise Cloud Migration</h3></div>
+            <p>A consulting brief: take a company's on-premises .NET store onto AWS without breaking it. A resilient web tier behind a load balancer, auto scaling from two instances to four across two availability zones, plus a serverless catalogue — judged against the Well-Architected pillars, not just whether it runs.</p>
+            <div class="card-foot">
+              <span class="tags">AWS · EC2 · Lambda · RDS</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/xanyeo06/MDSF-Mobile-Forensic-Investigation">
+          <div class="card-cover">
+            <img src="img/cover-mdsf.svg" alt="Recovered files on a mobile device" loading="lazy">
+          </div>
+          <div class="card-body">
+            <div class="card-top"><h3>Mobile Forensic Investigation</h3></div>
+            <p>A simulated insider case: an employee suspected of photographing confidential documents and stashing them in a calculator app that was not a calculator. The job was to prove it — logical extraction over ADB, three scrambled files recovered from a hidden directory, and static analysis of the APK to show the concealment was deliberate.</p>
+            <div class="card-foot">
+              <span class="tags">ADB · FTK Imager · Autopsy · ExifTool</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="group-head">
+        <h3>Personal</h3>
+        <span>Built for myself, still in use</span>
+      </div>
+
+      <article class="feature">
+        <div class="feature-cover">
+          <img src="img/cover-trackr.svg" alt="Bank alert emails parsed into a transaction table and shown in a phone app" loading="lazy">
+        </div>
+        <div class="feature-body">
+          <div class="card-top"><h3>Trackr</h3></div>
+          <p>Two things I kept losing track of: what I'd spent, and where my parcels were. Trackr handles both from one app.</p>
+          <p>Bank notification emails arrive in six different formats. A scheduled job reads them over the Gmail API, pulls out the amount, merchant and date, converts foreign spend to SGD, and drops anything it has already seen.</p>
+          <ul class="feature-list">
+            <li>Filing a transaction can write a rule for that merchant. Set it once and every later transaction from the same name lands in the right category on its own, which is what makes the recurring ones bearable.</li>
+            <li>Rules live in Postgres and match on word boundaries. A merchant that fits two categories stays uncategorised rather than being guessed at, and the rules are listed and removable from inside the app.</li>
+            <li>Expo app with hand-drawn donut charts, month-by-month navigation, batch recategorising, and swipe-to-delete that keeps a working trash.</li>
+          </ul>
+          <div class="card-foot">
+            <span class="tags">TypeScript · Expo · Supabase · Gmail API</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="stack" class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="section-note">03</p>
+        <h2>Tech Stack</h2>
+      </div>
+
+      <dl class="stack">
+        <div class="stack-row">
+          <dt>Languages</dt>
+          <dd>Python · TypeScript · JavaScript · C# · SQL</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Frontend &amp; Mobile</dt>
+          <dd>React · React Native · Expo · HTML · CSS</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Backend &amp; Data</dt>
+          <dd>Node.js · .NET · Flask · PostgreSQL · Supabase · SQLite</dd>
+        </div>
+        <div class="stack-row">
+          <dt>AI &amp; Machine Learning</dt>
+          <dd>scikit-learn · pandas · NumPy · Keras · Jupyter · Streamlit</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Cloud &amp; Infrastructure</dt>
+          <dd>AWS · Docker · Railway · Linux · Git</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Security Tooling</dt>
+          <dd>Splunk · Snort · Wireshark · Nmap · Metasploit · IDA Pro</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Digital Forensics</dt>
+          <dd>Autopsy · FTK Imager · ExifTool · ADB</dd>
+        </div>
+        <div class="stack-row">
+          <dt>Automation</dt>
+          <dd>Playwright · Selenium · Chrome Extensions</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="section-note">04</p>
+        <h2>Education</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="tl-item">
+          <div class="tl-head">
+            <h3 class="tl-title">Diploma in Cybersecurity &amp; Digital Forensics</h3>
+            <span class="tl-date">2023 — 2027</span>
+          </div>
+          <p class="tl-sub">Specialisation in AI for Cybersecurity</p>
+          <p class="tl-org">Ngee Ann Polytechnic</p>
+          <p class="tl-note">Coursework across network security, ethical hacking, digital forensics, malware analysis, cloud architecture and applied machine learning.</p>
+        </li>
+        <li class="tl-item">
+          <div class="tl-head">
+            <h3 class="tl-title">GCE O &amp; N Levels</h3>
+            <span class="tl-date">2019 — 2022</span>
+          </div>
+          <p class="tl-org">Bukit Panjang Government High School</p>
+          <ul class="tl-list">
+            <li>Six distinctions at GCE N-Levels (2022)</li>
+            <li>Top 5 in the Normal (Academic) cohort (2021)</li>
+            <li>Best in Additional Mathematics (2021)</li>
+            <li>Edusave Scholarship Award (2021)</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="awards" class="section">
+    <div class="shell">
+      <div class="section-head">
+        <p class="section-note">05</p>
+        <h2>Awards &amp; Certifications</h2>
+      </div>
+
+      <div class="award-lead">
+        <h3 class="group">Awards</h3>
+        <ul>
+          <li>
+            <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9.2" r="5"/><path d="M8.6 13.4L7 20.5l5-2.5 5 2.5-1.6-7.1"/></svg></span>
+            <div>
+              <p class="award-name">Yeo Sze Education Fund Scholarship Award 2026</p>
+              <p class="award-meta">Yeo Sze Education Fund Committee · Aug 2026</p>
+            </div>
+          </li>
+          <li>
+            <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.2 9.4L12 5.4l8.8 4-8.8 4z"/><path d="M7 11.6v3.2c0 1.2 2.2 2.2 5 2.2s5-1 5-2.2v-3.2"/><path d="M20.8 9.4v4.2"/></svg></span>
+            <div>
+              <p class="award-name">Mr and Mrs Ho Choy Shing Memorial</p>
+              <p class="award-meta">Ngee Ann Polytechnic · Jan 2023</p>
+              <p class="award-desc">For outstanding performance in Fundamentals of Computing, Polytechnic Foundation Programme — Technology Cluster, AY2023/2024.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="award-grid">
+
+        <div class="award-col">
+          <h3 class="group">Certifications</h3>
+          <ul>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 17h8.5a3 3 0 0 0 .3-5.99 4.2 4.2 0 0 0-8.05-.86A2.9 2.9 0 0 0 8 17z"/></svg></span>
+              <div><p class="award-name">AWS Serverless Demonstrated</p><p class="award-meta">Amazon Web Services · 2026</p></div>
+            </li>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 17h8.5a3 3 0 0 0 .3-5.99 4.2 4.2 0 0 0-8.05-.86A2.9 2.9 0 0 0 8 17z"/></svg></span>
+              <div><p class="award-name">AWS Certified AI Practitioner</p><p class="award-meta">Amazon Web Services · 2026</p></div>
+            </li>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 17h8.5a3 3 0 0 0 .3-5.99 4.2 4.2 0 0 0-8.05-.86A2.9 2.9 0 0 0 8 17z"/></svg></span>
+              <div><p class="award-name">AWS Certified Cloud Practitioner</p><p class="award-meta">Amazon Web Services · 2026</p></div>
+            </li>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 6.5H9l4.4 5.5L9 17.5h6.5"/></svg></span>
+              <div><p class="award-name">Six Sigma White Belt</p><p class="award-meta">Council for Six Sigma Certification · 2026</p></div>
+            </li>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.2l6.2 2.4v5.1c0 3.5-2.6 6-6.2 7.1-3.6-1.1-6.2-3.6-6.2-7.1V6.6z"/></svg></span>
+              <div><p class="award-name">Enterprise Security Management</p><p class="award-meta">Palo Alto Networks · 2025</p></div>
+            </li>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7.5" y="7.5" width="9" height="9" rx="1.6"/><path d="M10.2 4.4v3.1M13.8 4.4v3.1M10.2 16.5v3.1M13.8 16.5v3.1M4.4 10.2h3.1M4.4 13.8h3.1M16.5 10.2h3.1M16.5 13.8h3.1"/></svg></span>
+              <div><p class="award-name">AI Ready ASEAN</p><p class="award-meta">AI Singapore · 2025</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="award-col">
+          <h3 class="group">Training badges</h3>
+          <ul>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 17h8.5a3 3 0 0 0 .3-5.99 4.2 4.2 0 0 0-8.05-.86A2.9 2.9 0 0 0 8 17z"/></svg></span>
+              <div><p class="award-name">Cloud Quest: Generative AI Practitioner</p><p class="award-meta">Amazon Web Services · 2026</p></div>
+            </li>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 17h8.5a3 3 0 0 0 .3-5.99 4.2 4.2 0 0 0-8.05-.86A2.9 2.9 0 0 0 8 17z"/></svg></span>
+              <div><p class="award-name">Cloud Quest: Cloud Practitioner</p><p class="award-meta">Amazon Web Services · 2026</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="award-col">
+          <h3 class="group">Participation</h3>
+          <ul>
+            <li>
+              <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V4.5h11.5l-2 3.6 2 3.6H6"/></svg></span>
+              <div><p class="award-name">Hack N Flag 2025</p><p class="award-meta">Certificate of Participation · Ngee Ann Polytechnic · 2025</p></div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="note">Credentials are verifiable on <a href="https://www.linkedin.com/in/xanyeo">LinkedIn</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <p>Xander Yeo · Singapore</p>
+    <p class="footer-links">
+      <a href="https://github.com/xanyeo06">GitHub</a>
+      <a href="https://www.linkedin.com/in/xanyeo">LinkedIn</a>
+      <span id="year">2026</span>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

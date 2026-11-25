@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Abstract chart of classified network flows">
+  <rect width="1200" height="675" fill="#101012"/>
+  <g stroke="#ffffff" stroke-opacity="0.035">
+    <path d="M0 90H1200M0 180H1200M0 270H1200M0 360H1200M0 450H1200M0 540H1200"/>
+  </g>
+  <g fill="#2a2a2c">
+    <rect x="120" y="150" width="760" height="26"/>
+    <rect x="120" y="206" width="430" height="26"/>
+    <rect x="120" y="262" width="612" height="26"/>
+    <rect x="120" y="318" width="300" height="26"/>
+    <rect x="120" y="374" width="520" height="26"/>
+    <rect x="120" y="430" width="210" height="26"/>
+    <rect x="120" y="486" width="668" height="26"/>
+  </g>
+  <g fill="#c2a878">
+    <rect x="120" y="262" width="612" height="26"/>
+    <rect x="120" y="486" width="668" height="26"/>
+  </g>
+  <g fill="#c2a878" font-family="ui-monospace, monospace" font-size="17" letter-spacing="2">
+    <text x="960" y="282">DOS HULK</text>
+    <text x="960" y="506">PORTSCAN</text>
+  </g>
+  <g fill="#5f5d58" font-family="ui-monospace, monospace" font-size="15" letter-spacing="2">
+    <text x="120" y="588">BENIGN</text>
+    <text x="330" y="588">BRUTE FORCE</text>
+    <text x="640" y="588">WEB ATTACK</text>
+  </g>
+</svg>
